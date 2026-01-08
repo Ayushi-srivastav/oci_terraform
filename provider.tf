@@ -4,5 +4,5 @@ provider "oci" {
   user_ocid        = "ocid1.user.oc1..aaaaaaaav4xddiz5dvmvof2r3u64dztjezstrd7dz5fubxi2uxfpe25phv3q"
   fingerprint      = "e3:ff:01:c9:40:f1:08:39:75:c3:6f:1c:bf:0e:20:e6"
   private_key_path = "D:/Ashi OCI/Cloud/key/pem key/pvt.pem"
-  region           = "ap-mumbai-1"
+  region           = "us-ashburn-1"
 }
