@@ -1,7 +1,7 @@
-resource "oci_core_route_table" "flip_vcn_public_rt" {
+resource "oci_core_route_table" "app_rt" {
   compartment_id = "ocid1.compartment.oc1..aaaaaaaa3xzm37emmmjjamq5uo25ohrfdlytd6cb2qlhaksc65temewbdipa"
   vcn_id         = "ocid1.vcn.oc1.iad.amaaaaaaugo2acaayhrrey236o2d3flcrkgnc7thl7jvdjcnixhos2iy3ava"
-  display_name   = "flip-vcn-public-rt"
+  display_name   = "app_rt"
 
   route_rules {
     destination       = "0.0.0.0/0"
