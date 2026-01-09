@@ -7,8 +7,8 @@ resource "oci_core_subnet" "App_private_subnet" {
   cidr_block          = "10.0.2.0/29"
   dns_label           = "Apppvtsubnet"
   
-  route_table_id      = "ocid1.routetable.oc1.iad.aaaaaaaaylbdnxunt73gu5czj6s4sipzrca37gygufydhg7y6bnqvdx5i5na"
-  security_list_ids   = ["ocid1.securitylist.oc1.iad.aaaaaaaa73le4gj3o3t3alygqgd2zpgaxzzt5q265w5m7ggct3yzaujubypa"]
+  route_table_id      = oci_core_route_table.app_rt.id
+  security_list_ids   = [oci_core_security_list.app_sl.id]
   
   prohibit_internet_ingress = true
 
