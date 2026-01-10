@@ -24,7 +24,7 @@ resource "oci_identity_compartment" "Flip_network_compartment" {
 # create subcompartment flipcart computeandstorage compartment
 resource "oci_identity_compartment" "Flip_computeandstorage_compartment" {
   compartment_id = "ocid1.compartment.oc1..aaaaaaaaqhgpwayiwdq4phxrbdsdxofdjfjbzlg645px4ajcdfu3swoiig7a" # parent OCID (tenancy or another compartment)
-  name           = "Flip_computeandstorage_compartment"                                                                   # unique name within the parent
+  name           = "Flip_computeandstorage_compartment"                                                  # unique name within the parent
   description    = "Compartment for Flip retail project"
 
   defined_tags = {

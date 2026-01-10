@@ -6,6 +6,6 @@ resource "oci_core_virtual_network" "vcn" {
   dns_label      = "flipvcn"
 
   defined_tags = {
-    "FLIPKART-TAGS.Environment" = "Prod"  
+    "FLIPKART-TAGS.Environment" = "Prod"
   }
 }

@@ -7,8 +7,8 @@ resource "oci_core_route_table" "app_rt" {
     destination       = "0.0.0.0/0"
     destination_type  = "CIDR_BLOCK"
     network_entity_id = "ocid1.internetgateway.oc1.iad.aaaaaaaa5kgrg5ypkvbzg6dgi3qb5ikfzixgaznrsgklbvejgo26mokbyqbq"
-    description = "Route all internet traffic to Internet Gateway"
-    }
+    description       = "Route all internet traffic to Internet Gateway"
+  }
 
   defined_tags = {
     "FLIPKART-TAGS.Environment" = "Prod"

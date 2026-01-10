@@ -5,7 +5,7 @@ resource "oci_core_security_list" "app_sl" {
   display_name   = "app_sl"
 
   ingress_security_rules {
-    protocol    = "6"   # 6 is the protocol number for TCP
+    protocol    = "6" # 6 is the protocol number for TCP
     source      = "0.0.0.0/0"
     source_type = "CIDR_BLOCK"
     description = "Allow SSH from all sources"
